@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+    margin: 0px;
+    font-family: monospace, 'Roboto';
+    background-color: #000;
+    color: #999;
+}
+
+.d-flex {
+    display: flex;
+
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.p-2 {
+    padding: 2em;
+}
+
+.p-3 {
+    padding: 3em;
+}
+
+.p-4 {
+    padding: 4em;
+}
+
+.m-1 {
+    margin: 1em;
+}
+
+.m-2 {
+    margin: 2em;
+}
+
+.m-3 {
+    margin: 3em;
+}
+
+.m-4 {
+    margin: 4em;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.red {
+    color: #FF0000;
+}
+
+button {
+    background-color: orange;
+    padding: 0.5em;
+    color: #fff;
+    border-color: orange;
+    border-radius: 5px;
+}
+
+.form {
+
+    width: 40%;
+    align-items: start;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+    font-size: 22px;
+    border-radius: 3px;
+}
+
+.form input:focus,
+.form input:focus-visible,
+.form textarea:focus,
+.form textarea:focus-visible {
+    border: 3px solid orange;
+    outline: none;
+}
+
+.form textarea {
+    width: 100%;
+    border-radius: 3px;
+}
+
+section {
+    padding-bottom: 20px;
+}
