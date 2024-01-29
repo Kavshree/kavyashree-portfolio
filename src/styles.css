@@ -6,6 +6,7 @@ body {
     font-family: monospace, 'Roboto';
     background-color: #000;
     color: #999;
+    overflow-x: hidden; 
 }
 
 section {
@@ -67,17 +68,30 @@ section {
     margin-top: 1em;
 }
 
+@media only screen and (max-width: 700px) {
+    .p-1-xs {
+        padding: 1em;
+    }
+}
+
+
 /** colors **/
 .red {
     color: #FF0000;
+}
+.orange {
+    color: orange
 }
 
 /** Form **/
 .form {
     width: 40%;
     align-items: start;
-    @media only screen and (max-width: 600px) {
-        width: 100%;
+    
+}
+@media only screen and (max-width: 700px) {
+    .form {
+    width: 100%;
     }
 }
 
