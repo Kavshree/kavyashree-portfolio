@@ -8,6 +8,11 @@ body {
     color: #999;
 }
 
+section {
+    padding-bottom: 20px;
+}
+
+/** Flex **/
 .d-flex {
     display: flex;
 
@@ -25,6 +30,7 @@ body {
     flex-direction: column;
 }
 
+/** Spacing **/
 .p-1 {
     padding: 1em;
 }
@@ -61,22 +67,27 @@ body {
     margin-top: 1em;
 }
 
+/** colors **/
 .red {
     color: #FF0000;
 }
 
-button {
+/** Form **/
+.form {
+    width: 40%;
+    align-items: start;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.form button {
     background-color: orange;
     padding: 0.5em;
     color: #fff;
     border-color: orange;
     border-radius: 5px;
-}
-
-.form {
-
-    width: 40%;
-    align-items: start;
+    cursor: pointer;
 }
 
 .form input {
@@ -99,10 +110,3 @@ button {
     border-radius: 3px;
 }
 
-section {
-    padding-bottom: 20px;
-}
-
-button {
-    cursor: pointer;
-}

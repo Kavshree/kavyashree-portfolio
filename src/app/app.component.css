@@ -102,6 +102,9 @@ p {
     border-right: .15em solid orange;
     /* The typwriter cursor */
     white-space: nowrap;
+    @media only screen and (max-width: 600px) {
+        white-space: unset;
+    }
     /* Keeps the content on a single line */
     margin: 0 auto;
     /* Gives that scrolling effect as the typing happens */
