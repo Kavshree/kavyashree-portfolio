@@ -102,3 +102,7 @@ button {
 section {
     padding-bottom: 20px;
 }
+
+button {
+    cursor: pointer;
+}
