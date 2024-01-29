@@ -43,12 +43,19 @@
   <div class="typewriter p-2">
     <h3>Get in Touch</h3>
   </div>
+  
   <div class="d-flex content justify-content-center align-items-center flex-column form p-1-xs">
-    <span class="mt-1">Name</span> <input type="text" />
-    <span class="mt-1">Email</span> <input type="text" />
-    <span class="mt-1">Message</span> <textarea rows="10"></textarea>
-    <button class="mt-1">Send</button>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="76e2a1b5-d696-4216-a25e-07dffed4df40">
+    <input type="hidden" name="redirect" value="https://kavyashree-portfolio.web.app/">
+    <span class="mt-1">Name</span> <input  type="text" name="name" required/>
+    <span class="mt-1">Email</span> <input type="email" name="email" required/>
+    <span class="mt-1">Message</span> <textarea rows="10" name="message" required></textarea>
+    <div class="h-captcha" data-captcha="true"></div>
+    <button class="mt-1" type="submit">Send</button>
+  </form>
   </div>
+
 </section>
 
 <footer>
