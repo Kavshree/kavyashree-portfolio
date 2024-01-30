@@ -9,6 +9,8 @@
     letter-spacing: 0.3em;
     background: orange;
     text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .title {
@@ -20,7 +22,8 @@
 }
 
 .name-title {
-    font-size: 2em;
+    font-size: 42px;
+    word-wrap: break-word;
 }
 
 #flip {
@@ -34,6 +37,7 @@
     height: 45px;
     margin-bottom: 45px;
     display: inline-block;
+    word-wrap: break-word;
 }
 
 #flip div:first-child {
@@ -42,14 +46,18 @@
 
 #flip div div {
     background: #42c58a;
+    word-wrap: break-word;
 }
 
 #flip div:first-child div {
     background: #4ec7f3;
+    word-wrap: break-word;
 }
 
 #flip div:last-child div {
     background: #DC143C;
+    word-wrap: break-word;
+    
 }
 
 @keyframes show {

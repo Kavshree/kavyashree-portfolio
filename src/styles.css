@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
 body {
     margin: 0px;
     font-family: monospace, 'Roboto';
@@ -105,15 +110,13 @@ section {
 
 /** Form **/
 .form {
-    width: 40%;
-    align-items: start;
-    
-}
-@media only screen and (max-width: 700px) {
-    .form {
     width: 100%;
-    }
+    align-items: start;
 }
+form {
+    margin: 0 auto;
+}
+
 
 .form button {
     background-color: orange;
