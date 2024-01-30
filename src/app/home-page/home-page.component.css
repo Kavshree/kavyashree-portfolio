@@ -108,7 +108,7 @@ p {
 
 @media only screen and (min-width: 920px) {
     .typewriter h3 {
-        white-space: nowrap;
+        white-space: pre-line;
         animation:
         typing 3.5s steps(30, end),
         blink-caret .5s step-end infinite;
