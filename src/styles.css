@@ -17,6 +17,10 @@ body {
 section {
     padding-bottom: 20px;
 }
+hr{
+    border-color: #e4e4e7;
+    opacity: .05;
+}
 
 /** Flex **/
 .d-flex {
