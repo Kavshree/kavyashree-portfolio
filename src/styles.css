@@ -14,6 +14,16 @@ body {
     overflow-x: hidden; 
 }
 
+::-moz-selection { 
+    color: black;
+    background: orange;
+}
+  
+::selection {
+color: black;
+background: orange;
+}
+
 section {
     padding-bottom: 20px;
 }
@@ -45,58 +55,71 @@ hr{
 
 /** Spacing **/
 .p-1 {
-    padding: 1em;
+    padding: 10px;
 }
 
 .p-2 {
-    padding: 2em;
+    padding: 20px;
 }
 
 .p-3 {
-    padding: 3em;
+    padding: 30px;
 }
 
 .p-4 {
-    padding: 4em;
+    padding: 40px;
 }
 .pt-4 {
-    padding-top: 4em;
+    padding-top: 40px;
 }
 .pb-4 {
-    padding-bottom: 4em;
+    padding-bottom: 40px;
 }
 
 .m-1 {
-    margin: 1em;
+    margin: 10px;
 }
 
 .m-2 {
-    margin: 2em;
+    margin: 20px;
 }
 
 .m-3 {
-    margin: 3em;
+    margin: 30px;
 }
 
 .m-4 {
-    margin: 4em;
+    margin: 40px;
 }
 
 .mt-1 {
-    margin-top: 1em;
+    margin-top: 10px;
+}
+.w-50-responsive {
+    width: 50%;
+}
+.my-project-app {
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    .w-50-responsive {
+        width: 100%;
+    }
 }
 .center-text {
     margin: 0 auto;
     height: 80vh;
     line-height: 1.5;
-    font-size: 1.5em;
+    font-size: 15px;
     width: 50%;
     text-align: center;
 }
 
 @media only screen and (max-width: 700px) {
     .p-1-xs {
-        padding: 1em;
+        padding: 10px;
     }
 }
 
@@ -122,15 +145,15 @@ form {
 }
 
 
-.form button {
+button {
     background-color: orange;
-    padding: 0.5em 0.8em;
+    padding: 15px 18px;
     color: #000;
     border: 1px solid orange;
     border-radius: 5px;
     cursor: pointer;
     outline: none;
-    font-size: 1em;
+    font-size: 10px;
 }
 
 .form input {

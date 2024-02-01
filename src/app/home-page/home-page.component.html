@@ -1,101 +1,84 @@
 <div id="container">
-    <span class="name-title">KAVYASHREE</span>
-    <div id="flip">
-      <div>
-        <div>Coding</div>
-      </div>
-      <div>
-        <div>Innovation</div>
-      </div>
-      <div>
-        <div>Leadership</div>
-      </div>
+  <span class="name-title" aria-label="Kavyashree's Portfolio">KAVYASHREE</span>
+  <div id="flip">
+    <div>
+      <div>Coding</div>
     </div>
-    Making a Difference!
+    <div>
+      <div>Innovation</div>
+    </div>
+    <div>
+      <div>Leadership</div>
+    </div>
   </div>
-  
-  <section class="d-flex flex-column align-items-center">
-    <div class="typewriter p-2">
-      <h3><span class="orange">Seasoned Software Maestro:</span> A Decade of Coding Excellence</h3>
+  Making a Difference!
+</div>
+
+<section class="d-flex flex-column align-items-center">
+  <div class="typewriter p-2">
+    <h3><span class="orange">Seasoned Software Maestro:</span> A Decade of Coding Excellence</h3>
+  </div>
+  <div class="d-flex content justify-content-center align-items-center flex-column" aria-label="my journey">
+    <p>With over a decade of experience in the tech industry, I have honed my skills as a software developer and team
+      lead. My journey began as a frontend developer, but my insatiable curiosity and passion for learning led me to
+      acquire full-stack expertise.
+
+      My tech stack is robust and versatile, with a focus on AngularJS, Node.js, Express, and MongoDB using Mongoose. I
+      have also delved into the world of micro frontends, a testament to my commitment to staying abreast of the latest
+      trends and technologies in web development.</p>
+
+    <p>But my interests are not confined to coding alone. I am deeply fascinated by the architecture of web applications
+      and am always eager to learn more about it.
+
+      Moreover, I am passionate about cybersecurity. I believe that a great application is not just about innovative
+      features and seamless performance, but also about robust security measures. I am committed to safeguarding
+      websites from attacks and ensuring a safe and secure digital experience for all users.</p>
+
+    <p>In essence, I am a software developer at <span class="red">&#10084;</span>, a team leader by profession
+      <span class="orange">&#9000;</span>, and a lifelong learner in spirit.
+    </p>
+  </div>
+</section>
+
+<hr />
+
+<section class="d-flex flex-column align-items-center" id="my-projects">
+  <div class="typewriter p-2">
+    <h3 class="white" aria-label="Get in touch form">My Projects</h3>
+  </div>
+  <article class="d-flex text-center p-4">
+    <div class="projects-list" *ngFor="let project of myProjects" (click)="goToProject(project.path)">
+      <h4 class="white" aria-label="project name">{{project.name}}</h4>
+      <p aria-label="project title">{{project.title}}</p>
+      <p aria-label="project description">{{project.description}}</p>
+      <button (click)="goToProject(project.path)" aira-label="Go to Project" title="click to go to Project">Go to
+        Project</button>
     </div>
-    <div class="d-flex content justify-content-center align-items-center flex-column">
-      <p>With over a decade of experience in the tech industry, I have honed my skills as a software developer and team
-        lead. My journey began as a frontend developer, but my insatiable curiosity and passion for learning led me to
-        acquire full-stack expertise.
-  
-        My tech stack is robust and versatile, with a focus on AngularJS, Node.js, Express, and MongoDB using Mongoose. I
-        have also delved into the world of micro frontends, a testament to my commitment to staying abreast of the latest
-        trends and technologies in web development.</p>
-  
-      <p>But my interests are not confined to coding alone. I am deeply fascinated by the architecture of web applications
-        and am always eager to learn more about it.
-  
-        Moreover, I am passionate about cybersecurity. I believe that a great application is not just about innovative
-        features and seamless performance, but also about robust security measures. I am committed to safeguarding
-        websites from attacks and ensuring a safe and secure digital experience for all users.</p>
-  
-      <p>In essence, I am a software developer at <span class="red">&#10084;</span>, a team leader by profession
-        <span class="orange">&#9000;</span>, and a lifelong learner in spirit.</p>
-    </div>
-  </section>
-  <hr/>
-  <section class="d-flex flex-column align-items-center">
-    <div class="typewriter p-2">
-      <h3 class="white">Get in Touch</h3>
-    </div>
-  
-    <div class="d-flex content justify-content-center align-items-center flex-column form p-1-xs">
-      <form action="https://api.web3forms.com/submit" method="POST" class="p-4">
-        <input type="hidden" name="access_key" value="76e2a1b5-d696-4216-a25e-07dffed4df40">
-        <input type="hidden" name="redirect" value="https://kavyashree-portfolio.web.app/thanks">
-        
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required/>
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required/>
-        
-        <label for="message">Message</label>
-        <textarea id="message" rows="10" name="message" required></textarea>
-        
-        <div class="h-captcha" data-captcha="true"></div>
-        
-        <button class="mt-1" type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-  
-  <footer>
-    <div class="social-buttons d-flex justify-content-center align-items-center pt-4">
-      <a href="https://www.linkedin.com/in/kavyashreebj" target="_blank" class="social-button social-button--linkedin" aria-label="LinkedIn">
-        <svg xmlns="http://www.w3.org/2000/svg" alt="linkedIn" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-          <path fill="#0288D1"
-            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z">
-          </path>
-          <path fill="#FFF"
-            d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
-          </path>
-        </svg>
-      </a>
-      <a href="https://github.com/Kavshree" target="_blank" class="social-button social-button--github" aria-label="GitHub">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" alt="github">
-          <path fill="#fff" d="M41,24c0,9.4-7.6,17-17,17S7,33.4,7,24S14.6,7,24,7S41,14.6,41,24z"></path>
-          <path fill="#455a64"
-            d="M21 41v-5.5c0-.3.2-.5.5-.5s.5.2.5.5V41h2v-6.5c0-.3.2-.5.5-.5s.5.2.5.5V41h2v-5.5c0-.3.2-.5.5-.5s.5.2.5.5V41h1.8c.2-.3.2-.6.2-1.1V36c0-2.2-1.9-5.2-4.3-5.2h-2.5c-2.3 0-4.3 3.1-4.3 5.2v3.9c0 .4.1.8.2 1.1L21 41 21 41zM40.1 26.4C40.1 26.4 40.1 26.4 40.1 26.4c0 0-1.3-.4-2.4-.4 0 0-.1 0-.1 0-1.1 0-2.9.3-2.9.3-.1 0-.1 0-.1-.1 0-.1 0-.1.1-.1.1 0 2-.3 3.1-.3 1.1 0 2.4.4 2.5.4.1 0 .1.1.1.2C40.2 26.3 40.2 26.4 40.1 26.4zM39.8 27.2C39.8 27.2 39.8 27.2 39.8 27.2c0 0-1.4-.4-2.6-.4-.9 0-3 .2-3.1.2-.1 0-.1 0-.1-.1 0-.1 0-.1.1-.1.1 0 2.2-.2 3.1-.2 1.3 0 2.6.4 2.6.4.1 0 .1.1.1.2C39.9 27.1 39.9 27.2 39.8 27.2zM7.8 26.4c-.1 0-.1 0-.1-.1 0-.1 0-.1.1-.2.8-.2 2.4-.5 3.3-.5.8 0 3.5.2 3.6.2.1 0 .1.1.1.1 0 .1-.1.1-.1.1 0 0-2.7-.2-3.5-.2C10.1 26 8.6 26.2 7.8 26.4 7.8 26.4 7.8 26.4 7.8 26.4zM8.2 27.9c0 0-.1 0-.1-.1 0-.1 0-.1 0-.2.1 0 1.4-.8 2.9-1 1.3-.2 4 .1 4.2.1.1 0 .1.1.1.1 0 .1-.1.1-.1.1 0 0 0 0 0 0 0 0-2.8-.3-4.1-.1C9.6 27.1 8.2 27.9 8.2 27.9 8.2 27.9 8.2 27.9 8.2 27.9z">
-          </path>
-          <path fill="#455a64"
-            d="M14.2,23.5c0-4.4,4.6-8.5,10.3-8.5c5.7,0,10.3,4,10.3,8.5S31.5,31,24.5,31S14.2,27.9,14.2,23.5z"></path>
-          <path fill="#455a64"
-            d="M28.6 16.3c0 0 1.7-2.3 4.8-2.3 1.2 1.2.4 4.8 0 5.8L28.6 16.3zM20.4 16.3c0 0-1.7-2.3-4.8-2.3-1.2 1.2-.4 4.8 0 5.8L20.4 16.3zM20.1 35.9c0 0-2.3 0-2.8 0-1.2 0-2.3-.5-2.8-1.5-.6-1.1-1.1-2.3-2.6-3.3-.3-.2-.1-.4.4-.4.5.1 1.4.2 2.1 1.1.7.9 1.5 2 2.8 2 1.3 0 2.7 0 3.5-.9L20.1 35.9z">
-          </path>
-          <path fill="#00bcd4"
-            d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z M24,40c-8.8,0-16-7.2-16-16S15.2,8,24,8 s16,7.2,16,16S32.8,40,24,40z">
-          </path>
-        </svg>
-      </a>
-    </div>
-    <!-- Copyright notice -->
-    <div class="copyright d-flex justify-content-center align-items-center pb-4 text-center">
-      &copy; 2024 Kavyashree BJ. All rights reserved.
-    </div>
-  </footer>
+  </article>
+</section>
+
+<section class="d-flex flex-column align-items-center">
+  <div class="typewriter p-2">
+    <h3 class="white" aria-label="Get in touch form">Get in Touch</h3>
+  </div>
+
+  <div class="d-flex content justify-content-center align-items-center flex-column form p-1-xs">
+    <form action="https://api.web3forms.com/submit" method="POST" class="p-4">
+      <input type="hidden" name="access_key" value="76e2a1b5-d696-4216-a25e-07dffed4df40">
+      <input type="hidden" name="redirect" value="https://kavyashree-portfolio.web.app/thanks">
+
+      <label for="name" aria-label="Name">Name</label>
+      <input type="text" id="name" aria-label="enter name" name="name" required />
+
+      <label for="email" aria-label="Email">Email</label>
+      <input type="email" id="email" aria-label="enter email" name="email" required />
+
+      <label for="message" aria-label="Message">Message</label>
+      <textarea id="message" rows="10" name="message" aria-label="enter message" required></textarea>
+
+      <div class="h-captcha" data-captcha="true"></div>
+
+      <button class="mt-1" type="submit" aria-label="submit the form" title="send message to Kavya">Send</button>
+    </form>
+  </div>
+</section>

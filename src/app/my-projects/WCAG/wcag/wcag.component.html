@@ -1,0 +1,37 @@
+<a href="/" class="orange p-1" aria-label="Back to My Projects"> &lt; Back to My Projects</a>
+<div class="p-4">
+    <hr />
+    <h3 class="white text-center" aria-label="WCAG: Creating Inclusive Web Experiences">WCAG: Creating Inclusive Web
+        Experiences</h3>
+    <hr />
+    <section>
+        <p>In my web development journey, I prioritize creating websites that adhere to the Web Content Accessibility
+            Guidelines (WCAG). Web accessibility is not just a checkbox for me; it's a fundamental principle that
+            influences how I design and develop digital experiences.</p>
+        <p>Ensuring that a website complies with WCAG standards is more than a technical requirement; it's a commitment
+            to inclusivity. By implementing accessible design and functionality, we break down barriers and make the
+            digital world more welcoming to everyone, regardless of their abilities or disabilities.</p>
+
+        <p>Web accessibility isn't just about meeting regulatory standards; it's about changing lives. For individuals
+            with disabilities, a thoughtfully crafted accessible website opens up new possibilities, allowing them to
+            navigate, interact, and engage with online content seamlessly. Whether it's a form, a blog post, or an
+            interactive feature, accessibility ensures that everyone can participate in the online conversation.</p>
+
+        <p>As a developer, I believe in the transformative power of technology to enhance lives. By championing web
+            accessibility, I contribute to a more equitable online landscape, where everyone has the opportunity to
+            access information, connect with others, and engage in the digital world without barriers.</p>
+    </section>
+
+    <section class="my-project-app p-1" [innerHTML]="safeHtml"></section>
+
+    <section class="d-flex align-items-center">
+        <app-terminal [codeSnippet]="htmlSnippetBefore" class="w-50-responsive" aria-label="Non-WCAG Application">
+            <div title>Non-WCAG Application</div>
+        </app-terminal>
+
+        <app-terminal [codeSnippet]="htmlSnippetAfter" class="w-50-responsive" aria-label="WCAG Application">
+            <div title>WCAG Application</div>
+        </app-terminal>
+    </section>
+
+</div>
